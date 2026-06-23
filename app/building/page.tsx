@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { EditorialPage } from "@/components/EditorialPage";
 import { EditorialRow } from "@/components/EditorialRow";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Building — I AM ROWAN",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Building",
+  description:
+    "Projects Rowan Frew is building: Chesterbrook (CRE software), ZoneIQ, a personal CRM, and HouseFly. Founder-led products in commercial real estate and AI.",
+  path: "/building",
+});
 
 const entries = [
   {

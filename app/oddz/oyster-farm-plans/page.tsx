@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Oyster Farm Plans — I AM ROWAN",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Oyster Farm Plans",
+  description:
+    "Rowan Frew's detailed plans for starting an oyster farm: site requirements, gear, economics, permitting, and Rhode Island coastal considerations.",
+  path: "/oddz/oyster-farm-plans",
+});
 
 const siteRequirements = [
   "Certified shellfishing waters — not in a restricted or buffer zone.",

@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { EditorialPage } from "@/components/EditorialPage";
 import { EditorialRow } from "@/components/EditorialRow";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Community — I AM ROWAN",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Community",
+  description:
+    "Rowan Frew's community work: founder and volunteer swim instructor, former National Honor Society president, eXp Realty rally volunteer, and Northeastern Water Polo Alumni Network founder.",
+  path: "/community",
+});
 
 const entries = [
   {

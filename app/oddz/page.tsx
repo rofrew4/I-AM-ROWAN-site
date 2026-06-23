@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { EditorialPage } from "@/components/EditorialPage";
 import { EditorialRow } from "@/components/EditorialRow";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Oddz n Endz — I AM ROWAN",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Oddz n Endz",
+  description:
+    "Rowan Frew's interests outside work: oyster farm plans, water polo, boat projects, surfing, spearfishing, and track.",
+  path: "/oddz",
+});
 
 const boatWork = [
   "Fixing the electrical system",
