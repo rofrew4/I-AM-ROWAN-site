@@ -1,6 +1,6 @@
-export function ReachOut({ embedded = false }: { embedded?: boolean }) {
-  const content = (
-    <>
+export function SiteFooter() {
+  return (
+    <footer className="mt-20 border-t border-[#e8e0d4] pt-8">
       <h2 className="text-sm font-bold tracking-tight text-gray-600">
         Reach out!
       </h2>
@@ -25,12 +25,6 @@ export function ReachOut({ embedded = false }: { embedded?: boolean }) {
         </span>
         <a href="https://dixonfrew.com">dixonfrew.com</a>
       </p>
-    </>
+    </footer>
   );
-
-  if (embedded) {
-    return <div className="mt-[6.5rem]">{content}</div>;
-  }
-
-  return <section className="py-4">{content}</section>;
 }

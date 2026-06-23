@@ -1,5 +1,5 @@
 import { EditorialImage } from "@/components/EditorialRow";
-import { ReachOut } from "@/components/ReachOut";
+import { HomeMyStory } from "@/components/HomeMyStory";
 
 export function HomePressSection() {
   return (
@@ -27,7 +27,7 @@ export function HomePressSection() {
             </a>
           </p>
         </div>
-        <ReachOut embedded />
+        <HomeMyStory />
       </div>
       <EditorialImage
         src="/images/exp-rally-vertical.webp"

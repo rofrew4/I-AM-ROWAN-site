@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 interface EditorialPageProps {
@@ -14,7 +15,10 @@ export function EditorialPage({ variant = "sub", children }: EditorialPageProps)
       }`}
     >
       <SiteHeader />
-      <div className={variant === "home" ? "mt-8" : "mt-16"}>{children}</div>
+      <div className={variant === "home" ? "mt-8" : "mt-16"}>
+        {children}
+        {variant === "home" && <SiteFooter />}
+      </div>
     </main>
   );
 }
