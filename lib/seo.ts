@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://dizonfrew.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://dixonfrew.com";
 
 export const SITE_NAME = "Rowan Frew";
 export const SITE_BRAND = "I AM ROWAN";
@@ -18,7 +18,7 @@ export const OG_IMAGE = {
 
 export const SITE_KEYWORDS = [
   "Rowan Frew",
-  "dizonfrew",
+  "dixonfrew",
   "Chesterbrook",
   "Chesterbrook AI",
   "commercial real estate software",
