@@ -1,11 +1,11 @@
-import { SITE_BRAND, SITE_NAME, SITE_URL } from "@/lib/seo";
+import { SITE_BRAND, SITE_HANDLE, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export function WebSiteJsonLd() {
   const data = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: SITE_BRAND,
-    alternateName: SITE_NAME,
+    alternateName: [SITE_NAME, SITE_HANDLE, "dixonfrew.com"],
     url: SITE_URL,
     description:
       "Personal site of Rowan Frew — founder, builder, and CEO of Chesterbrook.",

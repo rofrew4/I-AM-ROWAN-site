@@ -20,6 +20,10 @@ export function ReachOut({ embedded = false }: { embedded?: boolean }) {
         >
           LinkedIn
         </a>
+        <span className="text-gray-300" aria-hidden="true">
+          ·
+        </span>
+        <a href="https://dixonfrew.com">dixonfrew.com</a>
       </p>
     </>
   );

@@ -7,9 +7,9 @@ import { WebSiteJsonLd } from "@/components/WebSiteJsonLd";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "I AM ROWAN",
+  title: "Rowan Frew | dixonfrew.com",
   description:
-    "Hey! I'm Rowan Frew, founder and CEO of Chesterbrook. I co-founded several businesses at Northeastern University, scaling one to $470k in revenue. I also run a volunteer swim organization for kids.",
+    "Hey! I'm Rowan Frew (dixonfrew.com), founder and CEO of Chesterbrook. I co-founded several businesses at Northeastern University, scaling one to $470k in revenue. I also run a volunteer swim organization for kids.",
   path: "/",
 });
 

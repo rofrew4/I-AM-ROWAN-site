@@ -5,9 +5,10 @@ export const SITE_URL =
 
 export const SITE_NAME = "Rowan Frew";
 export const SITE_BRAND = "I AM ROWAN";
+export const SITE_HANDLE = "dixonfrew";
 
 export const DEFAULT_DESCRIPTION =
-  "Rowan Frew is the founder and CEO of Chesterbrook, building custom AI software for commercial real estate and property management. Northeastern alum, former ZoneIQ co-founder, swim volunteer, and builder.";
+  "Rowan Frew (dixonfrew.com) is the founder and CEO of Chesterbrook, building custom AI software for commercial real estate and property management. Northeastern alum, former ZoneIQ co-founder, swim volunteer, and builder.";
 
 export const OG_IMAGE = {
   url: "/images/profile.webp",
@@ -85,7 +86,7 @@ export function createPageMetadata({
 export const rootMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Rowan Frew | Founder & CEO of Chesterbrook",
+    default: "Rowan Frew | dixonfrew.com",
     template: `%s | ${SITE_NAME}`,
   },
   description: DEFAULT_DESCRIPTION,
@@ -99,7 +100,7 @@ export const rootMetadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: "Rowan Frew | Founder & CEO of Chesterbrook",
+    title: "Rowan Frew | dixonfrew.com",
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_BRAND,
@@ -109,7 +110,7 @@ export const rootMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rowan Frew | Founder & CEO of Chesterbrook",
+    title: "Rowan Frew | dixonfrew.com",
     description: DEFAULT_DESCRIPTION,
     images: [OG_IMAGE.url],
   },

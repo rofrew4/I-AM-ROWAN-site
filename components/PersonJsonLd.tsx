@@ -1,5 +1,6 @@
 import {
   SITE_BRAND,
+  SITE_HANDLE,
   SITE_NAME,
   SITE_URL,
 } from "@/lib/seo";
@@ -9,7 +10,7 @@ export function PersonJsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: SITE_NAME,
-    alternateName: SITE_BRAND,
+    alternateName: [SITE_BRAND, SITE_HANDLE, "dixonfrew.com"],
     url: SITE_URL,
     image: `${SITE_URL}/images/profile.webp`,
     jobTitle: "Founder & CEO",
