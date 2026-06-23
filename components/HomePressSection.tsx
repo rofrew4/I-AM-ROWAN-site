@@ -3,7 +3,7 @@ import { ReachOut } from "@/components/ReachOut";
 
 export function HomePressSection() {
   return (
-    <section className="grid grid-cols-1 items-start gap-8 py-8 md:grid-cols-2">
+    <section className="mt-12 grid grid-cols-1 items-start gap-8 py-8 md:grid-cols-2">
       <div className="max-w-md">
         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
           Checkout my Press!
