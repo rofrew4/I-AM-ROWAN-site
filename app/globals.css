@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-body text-ink antialiased;
+  }
+
+  a {
+    @apply text-ink underline decoration-ink underline-offset-4 decoration-1 transition-opacity;
+  }
+
+  a:hover {
+    @apply text-black opacity-90;
+  }
+}
