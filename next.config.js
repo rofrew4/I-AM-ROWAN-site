@@ -8,6 +8,16 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [48, 96, 128, 180, 220, 384],
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.dixonfrew.com" }],
+        destination: "https://dixonfrew.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

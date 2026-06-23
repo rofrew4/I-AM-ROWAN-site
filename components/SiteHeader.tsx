@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { SITE_URL } from "@/lib/seo";
 
 const navItems = [
   { href: "/", label: "home" },
@@ -14,7 +15,13 @@ export function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-start justify-end gap-6">
+    <header className="flex items-start justify-between gap-6">
+      <Link
+        href={SITE_URL}
+        className="pt-1 text-[15px] lowercase text-muted no-underline hover:text-ink"
+      >
+        dixonfrew.com
+      </Link>
       <nav
         className="flex flex-wrap items-center justify-end gap-x-6 gap-y-2 pt-1 text-[15px] lowercase"
         aria-label="Site"

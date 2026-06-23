@@ -1,3 +1,5 @@
+import { SITE_URL } from "@/lib/seo";
+
 export function SiteFooter() {
   return (
     <footer className="mt-20 border-t border-[#e8e0d4] pt-8">
@@ -23,7 +25,7 @@ export function SiteFooter() {
         <span className="text-gray-300" aria-hidden="true">
           ·
         </span>
-        <a href="https://dixonfrew.com">dixonfrew.com</a>
+        <a href={SITE_URL}>dixonfrew.com</a>
       </p>
     </footer>
   );

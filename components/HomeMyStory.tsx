@@ -6,40 +6,51 @@ export function HomeMyStory() {
       </h2>
       <div className="mt-4 space-y-4 text-base leading-relaxed text-gray-600 md:text-lg">
         <p>
-          I&apos;m 22, a ginger from Virginia. I come from a family of WWII
-          pilots, architects, artists, marketers, and marine biologists.
-          Community has always mattered to me — it showed up in the pool as much
-          as anywhere else.
+          I&apos;m a 22 year old ginger from Virginia. I come from WWII pilots,
+          architects, artists, marketers, and marine biologists. Growing up, my
+          parents always told me to be someone who makes things, not consumes
+          them.
         </p>
         <p>
-          I swam with the McLean Marlins every summer until I was 19 and still go
-          back to the same pool and people each year. I played water polo from
-          age 10 on Capital Water Polo; at 17 I joined forces with Navy and
-          helped bring the team to 5th at Junior Olympics. That same year my
-          4×800 relay broke two school records, medaled at States, and qualified
-          for Nationals.
+          The pool has been a major part of my life since childhood. I spent
+          every summer swimming with the McLean Marlins, and I still show up to
+          the same pool every year to play and to volunteer my free time teaching
+          the next generation of little swimmers.
         </p>
         <p>
-          In high school I was president of my National Honor Society chapter and
-          sat on student council. I also founded a local swim program to teach
-          kids how to swim. I still run it and recruit high schoolers every
-          summer to help teach.
+          Water polo found me at 10. At 17 our Capital Water Polo team merged
+          with Navy and we took 5th at Junior Olympics. That same year my 4x800
+          track relay broke two school records, medaled at States, and made
+          Nationals. I don&apos;t run anymore, but I kept playing water polo at
+          the collegiate level at Northeastern.
         </p>
         <p>
-          I went into college planning on finance. Freshman year I passed the SIE
-          and interned with the Hando Adams group at UBS in wealth management.
-          The next year I moved to Athens for six months to work at Piraeus Bank
-          in corporate investment banking and financial markets. I traveled a
-          lot — ran into a Ukrainian sniper at Oktoberfest in Munich, snuck into
-          the Vatican to hear the Pope speak, and spent four days sleeping on
-          benches in Austria after losing my wallet.
+          Outside athletics, community matters a lot to me. I ran my high
+          school&apos;s National Honor Society chapter senior year and sat on
+          student council. At 17 I started recruiting younger high schoolers to
+          join my network teaching kids how to swim, and I still run the
+          organization today bringing on new highschoolers to help teach each
+          summer.
         </p>
         <p>
-          When I came back I fell in love with building companies with friends.
-          We failed a lot and learned a lot. First came Housefly, a
-          roommate-matching app. Then ZoneIQ — software that helped real estate
-          developers find properties — which actually worked. After graduating
-          Northeastern in 2026 I started{" "}
+          I entered college with a passion for finance. I passed the SIE freshman
+          year and interned at UBS with the Hando Adams group in wealth
+          management. Junior year I took school off and moved to Athens for six
+          months to work at Piraeus Bank on the corporate IB and financial
+          markets side. The work was great. The detours were better. I drank a
+          beer with a Ukrainian soldier at Oktoberfest, talked my way into the
+          Vatican to see Pope Francis, and lost my wallet in Austria and had to
+          sleep on park benches for four days before finding my way to family in
+          Denmark (Bigggg low point).
+        </p>
+        <p>
+          When I got back to America I lost my love for finance — the culture
+          didn&apos;t do it for me. Entrepreneurship did. My friends and I
+          started building. HouseFly first, a roommate-matching app that failed
+          but taught us a lot. Then ZoneIQ, software for real estate developers,
+          which actually worked. I closed my first 6 figure deals and helped
+          scale the company to nearly half a million in revenue my senior year. I
+          graduated Northeastern in 2026 and started{" "}
           <a
             href="https://chesterbrookai.com"
             target="_blank"
@@ -47,8 +58,9 @@ export function HomeMyStory() {
           >
             Chesterbrook
           </a>
-          , focused on AI strategy in commercial real estate and property
-          management. I&apos;m running it as CEO and building out the team.
+          , an AI strategy firm for commercial real estate and property
+          management. I&apos;m CEO, building the team, and having more fun than
+          I probably deserve.
         </p>
         <p>Thanks for reading.</p>
       </div>

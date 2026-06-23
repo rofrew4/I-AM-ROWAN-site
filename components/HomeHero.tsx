@@ -1,4 +1,5 @@
 import { HomePhotoRight, HomePhotos } from "@/components/HomePhotos";
+import { SITE_URL } from "@/lib/seo";
 
 export function HomeHero() {
   return (
@@ -9,7 +10,11 @@ export function HomeHero() {
           <h1 className="text-2xl font-semibold tracking-tight md:text-3xl">
             I AM ROWAN
           </h1>
-          <p className="mt-1 text-sm text-gray-500">dixonfrew.com</p>
+          <p className="mt-1 text-sm text-gray-500">
+            <a href={SITE_URL} className="text-gray-500 no-underline hover:text-gray-700">
+              dixonfrew.com
+            </a>
+          </p>
           <div className="mt-4 text-base leading-relaxed text-gray-600 md:mt-5 md:text-lg">
             <p>
               Hey! I&apos;m Rowan Frew. I&apos;m the founder and CEO of{" "}
