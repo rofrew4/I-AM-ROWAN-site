@@ -128,7 +128,7 @@ function SectionTitle({ children }: { children: string }) {
 export default function OysterFarmPlansPage() {
   return (
     <main className="mx-auto max-w-3xl px-6 pb-20 pt-16 md:px-8">
-      <SiteHeader variant="sub" />
+      <SiteHeader />
 
       <article className="mt-16">
         <header className="border-b border-[#e8e0d4] pb-8">

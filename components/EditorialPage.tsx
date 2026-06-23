@@ -13,7 +13,7 @@ export function EditorialPage({ variant = "sub", children }: EditorialPageProps)
         variant === "home" ? "pt-20" : "pt-16"
       }`}
     >
-      <SiteHeader variant={variant} />
+      <SiteHeader />
       <div className={variant === "home" ? "mt-8" : "mt-16"}>{children}</div>
     </main>
   );
