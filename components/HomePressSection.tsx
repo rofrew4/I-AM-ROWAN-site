@@ -53,7 +53,7 @@ export function HomePressSection() {
         <PressImageWithOverlay />
         <HomePressStackPhotos />
       </div>
-      <div className="min-w-0 md:col-start-2 md:-mt-24 md:row-start-2 lg:-mt-32">
+      <div className="min-w-0 md:col-start-2 md:-mt-24 md:row-start-2 md:pt-[6.4rem] lg:-mt-32">
         <HomeMyStory />
       </div>
     </>

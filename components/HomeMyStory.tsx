@@ -8,13 +8,12 @@ export function HomeMyStory() {
         <p>
           I&apos;m a 22 year old ginger from Virginia. I come from WWII pilots,
           architects, artists, marketers, and marine biologists. Growing up, my
-          parents always told me to be someone who makes things, not consumes
+          parents told me to be someone who makes things, not consumes
           them.
         </p>
         <p>
-          The pool has been a major part of my life since childhood. I spent
-          every summer swimming with the McLean Marlins, and I still show up to
-          the same pool every year to play and to volunteer my free time teaching
+          The pool is a major part of my life. I spent every summer swimming
+          with the McLean Marlins as a kid, and I still show up to the same pool every year to play and to volunteer my free time teaching
           the next generation of little swimmers.
         </p>
         <p>
