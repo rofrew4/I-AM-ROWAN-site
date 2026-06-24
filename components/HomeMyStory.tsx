@@ -33,7 +33,8 @@ export function HomeMyStory() {
           summer.
         </p>
         <p>
-          I entered college with a passion for finance. I passed the SIE freshman
+          In 2022, I enrolled at Northeastern University on the Dean&apos;s
+          Scholarship with a passion for finance. I passed the SIE freshman
           year and interned at UBS with the Hando Adams group in wealth
           management. Junior year I took school off and moved to Athens for six
           months to work at Piraeus Bank on the corporate IB and financial
