@@ -110,7 +110,7 @@ export function HomePressStackPhotos() {
   return (
     <div className="flex flex-col gap-4">
       <StackPhoto {...photos[1]} />
-      <StackPhoto {...photos[4]} />
+      <StackPhoto {...photos[2]} />
     </div>
   );
 }
@@ -118,8 +118,8 @@ export function HomePressStackPhotos() {
 export function HomePhotoRight() {
   return (
     <div className="hidden shrink-0 flex-col gap-4 md:flex">
-      <HeroPhoto {...photos[2]} />
       <HeroPhoto {...photos[3]} />
+      <HeroPhoto {...photos[4]} />
     </div>
   );
 }
