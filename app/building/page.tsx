@@ -18,15 +18,18 @@ const entries = [
     imageAlt: "Chesterbrook website homepage",
     imageHref: "https://chesterbrookai.com",
     description:
-      "Custom software for commercial real estate and property management firms. Solo founder, growing team. Currently working with clients across the US and Canada.",
+      "AI Strategy & Custom software for commercial real estate and property management firms. Solo founder, growing team. Currently working with clients across the US and Canada.",
     url: "chesterbrookai.com",
   },
   {
     title: "ZoneIQ · co-founder",
+    titleHref: "https://www.zoneiq.dev/",
     image: "/images/zoneiq.webp",
     imageAlt: "Rowan Frew presenting ZoneIQ on stage",
+    imageHref: "https://www.zoneiq.dev/",
     description:
       "Scaled to $470K revenue in Spring semester of senior year. Built with college friends while at Northeastern University. AI parcel intelligence for CRE developers and brokers.",
+    url: "zoneiq.dev",
   },
   {
     title: "Personal CRM",
