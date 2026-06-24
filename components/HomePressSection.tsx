@@ -18,12 +18,12 @@ function PressImageWithOverlay() {
         blurDataURL={meta.blurDataURL}
         className="object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/45 to-black/25" />
-      <div className="absolute inset-0 flex flex-col justify-end p-5 md:p-6">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/15 to-black/75" />
+      <div className="absolute inset-0 flex flex-col justify-between p-5 md:p-6">
         <h2 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
           Checkout my Press!
         </h2>
-        <div className="mt-3 flex flex-col gap-2 text-base leading-relaxed md:text-lg">
+        <div className="flex flex-col gap-2 text-base leading-relaxed md:text-lg">
           <a
             href="https://news.northeastern.edu/2026/05/15/piraeus-bank-co-op-greece/"
             target="_blank"
