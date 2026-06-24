@@ -21,13 +21,13 @@ const photos = [
     src: "/images/home-presenting.webp",
     alt: "Rowan Frew giving a presentation",
     priority: false,
+    position: "object-[50%_20%]",
   },
   {
     src: "/images/home-3.webp",
     alt: "Rowan Frew by the fountain at the World War II Memorial",
     priority: false,
     position: "object-[50%_38%]",
-    zoom: 1.45,
   },
   {
     src: "/images/home-4.webp",
@@ -64,6 +64,7 @@ function HeroPhoto({
         alt={alt}
         sizes={sizes}
         priority={priority}
+        quality={95}
         className={`h-full w-full object-cover ${position}`}
         style={{
           width: HERO_PHOTO_WIDTH,
@@ -94,8 +95,8 @@ function StackPhoto({
         src={meta.src}
         alt={alt}
         fill
-        sizes="(max-width: 768px) 100vw, 320px"
-        quality={90}
+        sizes="(max-width: 768px) 100vw, 400px"
+        quality={95}
         placeholder="blur"
         blurDataURL={meta.blurDataURL}
         priority={priority}
@@ -110,15 +111,15 @@ export function HomePressStackPhotos() {
   return (
     <div className="flex flex-col gap-4">
       <StackPhoto {...photos[1]} />
-      <StackPhoto {...photos[2]} />
+      <StackPhoto {...photos[3]} position={photos[3].position} />
     </div>
   );
 }
 
 export function HomePhotoRight() {
   return (
-    <div className="hidden shrink-0 flex-col gap-4 md:flex">
-      <HeroPhoto {...photos[3]} />
+    <div className="flex shrink-0 flex-col gap-4">
+      <HeroPhoto {...photos[2]} priority position={photos[2].position} />
       <HeroPhoto {...photos[4]} />
     </div>
   );

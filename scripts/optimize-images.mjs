@@ -14,6 +14,7 @@ const SOURCES = [
   "home-2.png",
   "home-3.png",
   "home-4.png",
+  "home-presenting.png",
   "housefly.png",
   "swim-instructor.png",
   "water-polo-team.png",
@@ -83,12 +84,6 @@ const CROPPED_SOURCES = [
     output: "oddz-track.webp",
     aspect: [3, 2],
     topBias: 0.55,
-  },
-  {
-    source: "home-presenting.png",
-    output: "home-presenting.webp",
-    aspect: [3, 4],
-    topBias: 0.35,
   },
 ];
 

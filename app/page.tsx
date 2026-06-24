@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { EditorialPage } from "@/components/EditorialPage";
-import { HomeHero } from "@/components/HomeHero";
-import { HomePressSection } from "@/components/HomePressSection";
+import { HomeMain } from "@/components/HomeMain";
 import { PersonJsonLd } from "@/components/PersonJsonLd";
 import { WebSiteJsonLd } from "@/components/WebSiteJsonLd";
 import { createPageMetadata } from "@/lib/seo";
@@ -19,8 +18,7 @@ export default function HomePage() {
       <PersonJsonLd />
       <WebSiteJsonLd />
       <EditorialPage variant="home">
-        <HomeHero />
-        <HomePressSection />
+        <HomeMain />
       </EditorialPage>
     </>
   );

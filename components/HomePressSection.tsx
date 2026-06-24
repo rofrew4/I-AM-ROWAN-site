@@ -12,8 +12,8 @@ function PressImageWithOverlay() {
         src={meta.src}
         alt="Rowan Frew being interviewed at the eXp Realty Regional Rallies event"
         fill
-        sizes="(max-width: 768px) 100vw, 320px"
-        quality={90}
+        sizes="(max-width: 768px) 100vw, 400px"
+        quality={95}
         placeholder="blur"
         blurDataURL={meta.blurDataURL}
         className="object-cover object-center"
@@ -28,17 +28,17 @@ function PressImageWithOverlay() {
             href="https://news.northeastern.edu/2026/05/15/piraeus-bank-co-op-greece/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/90 underline decoration-white/40 underline-offset-4 transition-colors hover:text-white"
+            className="inline-flex items-center gap-1 text-white/90 underline decoration-white/40 underline-offset-4 transition-colors hover:text-white"
           >
-            Northeastern Global News
+            → Northeastern Global News
           </a>
           <a
             href="https://cssh.northeastern.edu/this-student-flagged-risk-and-posted-a-profit-on-1m-investment-during-co-op-at-a-greek-bank/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/90 underline decoration-white/40 underline-offset-4 transition-colors hover:text-white"
+            className="inline-flex items-center gap-1 text-white/90 underline decoration-white/40 underline-offset-4 transition-colors hover:text-white"
           >
-            CSSH Northeastern
+            → CSSH Northeastern
           </a>
         </div>
       </div>
@@ -48,14 +48,14 @@ function PressImageWithOverlay() {
 
 export function HomePressSection() {
   return (
-    <section className="mt-4 grid grid-cols-1 items-start gap-8 py-4 md:grid-cols-2 md:gap-10">
-      <div className="flex w-full max-w-md flex-col gap-4">
+    <>
+      <div className="flex w-full max-w-md flex-col gap-4 md:col-start-1 md:-mt-24 md:row-start-2 lg:-mt-32">
         <PressImageWithOverlay />
         <HomePressStackPhotos />
       </div>
-      <div className="min-w-0">
+      <div className="min-w-0 md:col-start-2 md:-mt-24 md:row-start-2 lg:-mt-32">
         <HomeMyStory />
       </div>
-    </section>
+    </>
   );
 }
