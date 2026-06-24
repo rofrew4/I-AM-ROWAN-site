@@ -49,11 +49,11 @@ function PressImageWithOverlay() {
 export function HomePressSection() {
   return (
     <>
-      <div className="flex w-full max-w-md flex-col gap-4 md:col-start-1 md:-mt-24 md:row-start-2 lg:-mt-32">
+      <div className="flex w-full max-w-md flex-col gap-4 md:col-start-1 md:-mt-[7.85rem] md:row-start-2 lg:-mt-[9.85rem]">
         <PressImageWithOverlay />
         <HomePressStackPhotos />
       </div>
-      <div className="min-w-0 md:col-start-2 md:-mt-24 md:row-start-2 md:pt-[6.4rem] lg:-mt-32">
+      <div className="min-w-0 md:col-start-2 md:-mt-24 md:row-start-2 md:pt-[8.25rem] lg:-mt-32">
         <HomeMyStory />
       </div>
     </>
