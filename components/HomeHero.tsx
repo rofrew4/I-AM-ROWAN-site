@@ -31,8 +31,9 @@ export function HomeHeroText() {
           University, scaling one to $470k in revenue.
         </p>
         <p className="mt-4">
-          I also run a volunteer organization with a mission of teaching kids how
-          to swim.
+          I also run a volunteer organization that helps kids learn how to swim.
+          I bring in local highschoolers looking for volunteer work and connect
+          them with parents looking for reliable swim instructors.
         </p>
       </div>
     </>
