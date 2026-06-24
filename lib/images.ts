@@ -18,6 +18,7 @@ const LEGACY_SRC: Record<string, string> = {
   "/images/water-polo-action.png": "/images/water-polo-action.webp",
   "/images/oddz-oyster-source.png": "/images/oddz-oyster.webp",
   "/images/oddz-track-source.png": "/images/oddz-track.webp",
+  "/images/home-presenting.png": "/images/home-presenting.webp",
   "/images/profile.jpg": "/images/profile.webp",
   "/images/home-1.png": "/images/home-1.webp",
   "/images/home-2.png": "/images/home-2.webp",
@@ -102,6 +103,13 @@ export const imageMeta: Record<string, ImageMeta> = {
     height: 383,
     blurDataURL:
       "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoKAAoAA4BaJbACdH8AE74xwwsAAP55P0P+ACVgZJzua7NyrHq/1CgVne9mLLiPNHTNfNQ6CEvqSn+HdSO0FlsAAAA=",
+  },
+  "/images/home-presenting.webp": {
+    src: "/images/home-presenting.webp",
+    width: 768,
+    height: 1024,
+    blurDataURL:
+      "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoKAAoAA4BaJYwCsAEekqi3XY4AAP6IUF5fI4XISOaafQnke0lgdS3eRisNYTSEIKJ/VXvlNDa2fvgajHfJD4/PGRUAAA==",
   },
   "/images/profile.webp": {
     src: "/images/profile.webp",

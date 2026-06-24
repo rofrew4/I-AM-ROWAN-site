@@ -1,11 +1,10 @@
-import { HomePhotoRight, HomePhotos } from "@/components/HomePhotos";
+import { HomePhotoRight } from "@/components/HomePhotos";
 import { SITE_URL } from "@/lib/seo";
 
 export function HomeHero() {
   return (
     <section className="py-6 md:py-8">
       <div className="flex items-start justify-between gap-6 md:gap-10">
-        <HomePhotos />
         <div className="min-w-0 max-w-md flex-1">
           <h1 className="text-2xl font-semibold tracking-tight md:text-3xl">
             I AM ROWAN

@@ -84,6 +84,12 @@ const CROPPED_SOURCES = [
     aspect: [3, 2],
     topBias: 0.55,
   },
+  {
+    source: "home-presenting.png",
+    output: "home-presenting.webp",
+    aspect: [3, 4],
+    topBias: 0.35,
+  },
 ];
 
 const MAX_WIDTH = 1200;

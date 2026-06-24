@@ -1,6 +1,6 @@
 export function HomeMyStory() {
   return (
-    <div className="mt-16">
+    <div>
       <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
         My Story
       </h2>

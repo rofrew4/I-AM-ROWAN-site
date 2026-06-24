@@ -1,9 +1,10 @@
+import Image from "next/image";
 import { OptimizedImage } from "@/components/OptimizedImage";
+import { getImageMeta } from "@/lib/images";
 
-const HOME_PHOTO_WIDTH = 150;
-const HOME_PHOTO_HEIGHT = Math.round(HOME_PHOTO_WIDTH * (4 / 3));
-/** Request 3× display width for retina + tight crops without upscaling blur. */
-const HOME_PHOTO_SIZES = `(max-width: 767px) 0px, ${HOME_PHOTO_WIDTH * 3}px`;
+const HERO_PHOTO_WIDTH = 220;
+const HERO_PHOTO_HEIGHT = Math.round(HERO_PHOTO_WIDTH * (4 / 3));
+const HERO_PHOTO_SIZES = `(max-width: 767px) 0px, ${HERO_PHOTO_WIDTH * 3}px`;
 
 const photos = [
   {
@@ -14,6 +15,11 @@ const photos = [
   {
     src: "/images/home-2.webp",
     alt: "Rowan Frew sitting on the grass with a friend",
+    priority: false,
+  },
+  {
+    src: "/images/home-presenting.webp",
+    alt: "Rowan Frew giving a presentation",
     priority: false,
   },
   {
@@ -30,7 +36,7 @@ const photos = [
   },
 ] as const;
 
-function Photo({
+function HeroPhoto({
   src,
   alt,
   priority = false,
@@ -45,13 +51,13 @@ function Photo({
 }) {
   const sizes =
     zoom != null
-      ? `(max-width: 767px) 0px, ${Math.round(HOME_PHOTO_WIDTH * 3 * zoom)}px`
-      : HOME_PHOTO_SIZES;
+      ? `(max-width: 767px) 0px, ${Math.round(HERO_PHOTO_WIDTH * 3 * zoom)}px`
+      : HERO_PHOTO_SIZES;
 
   return (
     <div
       className="relative shrink-0 overflow-hidden rounded-lg"
-      style={{ width: HOME_PHOTO_WIDTH, height: HOME_PHOTO_HEIGHT }}
+      style={{ width: HERO_PHOTO_WIDTH, height: HERO_PHOTO_HEIGHT }}
     >
       <OptimizedImage
         src={src}
@@ -60,8 +66,8 @@ function Photo({
         priority={priority}
         className={`h-full w-full object-cover ${position}`}
         style={{
-          width: HOME_PHOTO_WIDTH,
-          height: HOME_PHOTO_HEIGHT,
+          width: HERO_PHOTO_WIDTH,
+          height: HERO_PHOTO_HEIGHT,
           transform: zoom != null ? `scale(${zoom})` : undefined,
         }}
       />
@@ -69,11 +75,42 @@ function Photo({
   );
 }
 
-export function HomePhotos() {
+function StackPhoto({
+  src,
+  alt,
+  priority = false,
+  position = "object-center",
+}: {
+  src: string;
+  alt: string;
+  priority?: boolean;
+  position?: string;
+}) {
+  const meta = getImageMeta(src);
+
   return (
-    <div className="hidden shrink-0 flex-col gap-4 md:flex">
-      <Photo {...photos[0]} />
-      <Photo {...photos[1]} />
+    <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg">
+      <Image
+        src={meta.src}
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 100vw, 320px"
+        quality={90}
+        placeholder="blur"
+        blurDataURL={meta.blurDataURL}
+        priority={priority}
+        loading={priority ? undefined : "lazy"}
+        className={`object-cover ${position}`}
+      />
+    </div>
+  );
+}
+
+export function HomePressStackPhotos() {
+  return (
+    <div className="flex flex-col gap-4">
+      <StackPhoto {...photos[1]} />
+      <StackPhoto {...photos[4]} />
     </div>
   );
 }
@@ -81,8 +118,8 @@ export function HomePhotos() {
 export function HomePhotoRight() {
   return (
     <div className="hidden shrink-0 flex-col gap-4 md:flex">
-      <Photo {...photos[2]} />
-      <Photo {...photos[3]} />
+      <HeroPhoto {...photos[2]} />
+      <HeroPhoto {...photos[3]} />
     </div>
   );
 }
