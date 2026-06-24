@@ -7,7 +7,7 @@ function PressImageWithOverlay() {
   const meta = getImageMeta("/images/exp-rally-vertical.webp");
 
   return (
-    <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg">
+    <div className="group relative aspect-[3/4] w-full overflow-hidden rounded-lg">
       <Image
         src={meta.src}
         alt="Rowan Frew being interviewed at the eXp Realty Regional Rallies event"
@@ -16,7 +16,7 @@ function PressImageWithOverlay() {
         quality={95}
         placeholder="blur"
         blurDataURL={meta.blurDataURL}
-        className="object-cover object-center"
+        className="object-cover object-center transition-transform duration-300 group-hover:scale-[1.02]"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/45 to-black/25" />
       <div className="absolute inset-0 flex flex-col justify-end p-5 md:p-6">
