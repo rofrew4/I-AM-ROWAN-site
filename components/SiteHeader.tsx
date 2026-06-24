@@ -15,7 +15,7 @@ export function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-start justify-between gap-6">
+    <header className="sticky top-0 z-50 -mx-6 mb-8 flex items-start justify-between gap-6 border-b border-[#e8e0d4]/60 bg-white/95 px-6 py-4 backdrop-blur-sm">
       <Link
         href={SITE_URL}
         className="pt-1 text-[15px] lowercase text-muted no-underline hover:text-ink"
