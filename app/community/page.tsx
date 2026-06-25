@@ -13,10 +13,18 @@ export const metadata: Metadata = createPageMetadata({
 const entries = [
   {
     title: "Founder & Volunteer · Swim Instructor",
+    titleHref:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe5iZugBLDslRXMF-7je6P9bEZ4vH4NoE75_YzugWZzn1Wa3g/viewform?usp=publish-editor",
     image: "/images/swim-instructor.webp",
     imageAlt: "Swim team celebrating in the pool",
+    imageHref:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe5iZugBLDslRXMF-7je6P9bEZ4vH4NoE75_YzugWZzn1Wa3g/viewform?usp=publish-editor",
     description:
       "I run a volunteer organization with a mission of teaching kids how to swim.",
+    link: {
+      href: "https://docs.google.com/forms/d/e/1FAIpQLSe5iZugBLDslRXMF-7je6P9bEZ4vH4NoE75_YzugWZzn1Wa3g/viewform?usp=publish-editor",
+      label: "Request a swim lesson",
+    },
   },
   {
     title: "Former President · National Honor Society",
